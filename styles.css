@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/primeicons/primeicons.css';
+@import '../node_modules/primeng/resources/themes/nova-light/theme.css';
+@import "~leaflet/dist/leaflet.css";
+
+@font-face {
+    font-family: GE Inspira;
+    src: url(assets/fonts/GEInspBd_0.TTF) format("opentype");
+  }
+
+.row {
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.monthOverView{
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.monthDropdown{
+    position: relative;
+    top: 5px;
+    float: right;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+body .ui-dropdown .ui-dropdown-label {
+    padding-right: 2em;
+    color: #3D7CC9;
+    font-weight: 600;
+}
+
+body .pi-chevron-down:before {
+    color: #3D7CC9;
+}
+
+.ng-tns-c9-0.ui-dropdown.ui-widget.ui-state-default.ui-corner-all.ui-helper-clearfix {
+    border-color: #3D7CC9;
+}
+
+.selectpicker{
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 18px;
+    color: #3D7CC9;
+    border-color: #3D7CC9;
+    padding-right: 2em;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "GE Inspira","GE Inspira Sans"; }
+
