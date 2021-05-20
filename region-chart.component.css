@@ -1,0 +1,45 @@
+.progress {
+    /* display: -webkit-box; */
+    display: flex;
+    height: 1.35rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 1rem;
+}
+
+.progress-bar-danger{
+    background-color: #F74735;
+}
+
+.progress-bar-warning{
+    background-color: #F7C82D;
+}
+
+.progress-bar-success{
+    /* background: linear-gradient(90deg, rgba(57,77,143,1) 27%, rgba(0,42,117,1) 100%);; */
+    background-color: #3D7CCB;
+}
+
+.btnSuccess{
+    color: #3D7CCB;
+}
+
+.btnDanger{
+    color: #F74735;
+}
+
+.btnWarning{
+    color: #F7C82D;
+}
+
+.btnCommon{
+    border: none;
+    background-color: white;
+    font-size: 13px;
+}
+
+.btnGrey{
+    color: grey;
+}

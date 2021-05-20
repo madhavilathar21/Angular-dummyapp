@@ -1,0 +1,44 @@
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 13px;
+    margin-bottom: 16px;
+  }
+  
+  .map-frame {
+    /* border: 2px solid black; */
+    height: 300px;
+  }
+  
+  #map {
+    height: 296px;
+  }
+
+  .componentHeading{
+    color: #00306C;
+    font-size: 24px;
+    padding-left: 22px;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
+  .totalVal {
+    /* float: right; */
+    font-size: 19px;
+    font-weight: 600;
+    /* margin-right: 18px; */
+    color: #00306C;
+    cursor: pointer;
+}
+
+.totalKey{
+  font-size: 14px;
+    position: relative;
+    top: 26px;
+    float: right;
+    right: 3rem;
+    font-weight: 400;
+}

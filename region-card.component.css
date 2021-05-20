@@ -1,0 +1,99 @@
+.boxStyle{
+    background: linear-gradient(90deg, rgba(57,77,143,1) 27%, rgba(0,42,117,1) 100%);
+    color: white;
+    box-shadow: 1px 2px 10px black;
+    padding-left: 30px;
+    /* height: 130px; */
+}
+
+.numDigit {
+    font-size: 19px;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.valDigit{
+    font-size: 14px;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.last{
+    border-right: 0 !important;
+}
+
+.cardHeading{
+    font-size: 19px;
+    margin-bottom: 13px;
+    margin-top: 5px;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.componentHeading {
+    color: #00306C;
+    font-size: 25px;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.innerBoxStyle{
+    background: linear-gradient(90deg, rgba(57,77,143,1) 27%, rgba(0,42,117,1) 100%);
+    color: white;
+}
+
+.row {
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.section{
+    margin-bottom: 10px;
+    width: 14.2857%;
+    padding-left: 23px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.valSection{
+    border-right: 5px solid #516A9F;
+}
+
+.compVal {
+    color: #BEC6DB;
+    font-size: 12px;
+    font-family: "GE Inspira","GE Inspira Sans";
+    /* font-weight: 500; */
+}
+
+.apacVal{
+    color: #FC5E2E;
+}
+
+.egyptVal{
+    color: #1BB09A;
+}
+
+.euroVal{
+    color: #FBB037;
+}
+
+.indVal{
+    color: #88C925;
+}
+
+.ucVal{
+    color: #16ACB4;
+}
+
+.ssaVal{
+    color: #B8BE26;
+}
+
+.usVal{
+    color: #A64CA3;
+}
+
+.progress {
+    background-color: #F74735;
+}
+
+.progress-bar-success {
+    background-color: #3D7CCB;
+}
