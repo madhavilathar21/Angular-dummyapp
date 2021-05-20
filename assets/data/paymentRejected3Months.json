@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Rejected Amount",
+    "data": [
+      {
+        "color": "#FF473E",
+        "radius": "112%",
+        "innerRadius": "100%",
+        "y": 100
+      }
+    ]
+  },
+  {
+    "name": "Rejected Invoices % (Cleared)",
+    "data": [
+      {
+        "color": "#3D7CC9",
+        "radius": "87%",
+        "innerRadius": "75%",
+        "y": 70
+      }
+    ]
+  },
+  {
+    "name": "Rejected Invoices % (Not Cleared)",
+    "data": [
+      {
+        "color": "#FFAF26",
+        "radius": "62%",
+        "innerRadius": "50%",
+        "y": 30
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Invoice Value",
+        "data": [
+            183.6,
+            178.8,
+            198.5,
+            260,
+            530,
+            460,
+            820,
+            420,
+            130,
+            680
+        ],
+        "pointPadding": 0.1,
+        "pointPlacement": -0.1
+    },
+    {
+        "name": "Invoice Number",
+        "data": [
+            150,
+            73,
+            20,
+            95,
+            62,
+            78,
+            23,
+            45,
+            15,
+            82
+        ],
+        "pointPadding": 0.1,
+        "pointPlacement": 0.2,
+        "yAxis": 1
+    }
+]

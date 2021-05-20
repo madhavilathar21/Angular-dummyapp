@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Outstanding Amount",
+    "data": [
+      500,
+      700,
+      555,
+      695,
+      352,
+      109
+    ]
+  },
+  {
+    "name": "Overdue Amount",
+    "data": [
+      677,
+      455,
+      677,
+      583,
+      479,
+      430
+    ]
+  },
+  {
+    "name": "Amount Cleared",
+    "data": [
+      455,
+      778,
+      888,
+      200,
+      655,
+      490
+    ]
+  },
+  {
+    "name": "Amount Not Cleared",
+    "data": [
+      488,
+      567,
+      654,
+      500,
+      833,
+      610
+    ]
+  }
+]

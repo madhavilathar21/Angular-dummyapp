@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Amount Cleared",
+        "data": [
+            5,
+            3,
+            4
+        ]
+    },
+    {
+        "name": "Overdue Amount",
+        "data": [
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "name": "Outstanding Amount",
+        "data": [
+            3,
+            4,
+            4
+        ]
+    }
+]
