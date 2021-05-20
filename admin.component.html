@@ -1,0 +1,61 @@
+<div class="col-sm-12 col-md-12 col-xl-12">
+    <span class="componentHeading">Upload Data</span>
+    <div class="dropzone" ng2FileDrop [ngClass]="{'nv-file-over': hasBaseDropZoneOver}" [uploader]="uploader"
+        (change)=onAction($event.target.files) (onFileDrop)="dropped($event)">
+ 
+        <input type="file" #fileDropRef id="fileDropDef" multiple ng2FileSelect [uploader]="uploader"
+            (change)=onAction($event.target.files) />
+        <img src="assets/images/Upload.png" style="height:80px;padding-bottom:10px ;" alt="Upload">
+        <h4>Drag files here to upload or <a href="" for="fileDropDef">
+                Select a file</a> from your device</h4>
+        <h6 class="redText">Excel,CSV files only. Maximum file size= 10MB</h6>
+
+
+ 
+        <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-scale-multiple">
+            <p style="font-size: 20px; color: white">Loading...</p>
+        </ngx-spinner>
+    </div>
+    <div class="subsection">
+ 
+        <div>
+            <button type="submit" class="btn  btn-primary" style="align-content: center;" (click)="uploadFile()"
+                [disabled]="!uploader.getNotUploadedItems().length  || uploadClickedFlag ">Upload</button>
+                <br>
+                <br>
+                <span *ngIf="uploadClickedFlag" style="color: blue;">File upload already in progress , please wait</span>
+ 
+                <span *ngIf="successFlag" class="greenText">File Uploaded successfully.</span>
+                <span *ngIf="failFlag" class="redText">File not uploaded, please check the file format! </span>
+        </div>
+        <table class="table" style="border: transparent;" 
+        *ngIf="uploader.getNotUploadedItems().length && !uploadClickedFlag && !successFlag">
+            <thead>
+                <tr style="border: transparent;">
+                    <th width="50%" style="border: transparent;">Name</th>
+                    <th style="border: transparent;">Size</th>
+ 
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of uploader.queue" style="border: transparent;">
+                    <td style="border: transparent;"><strong>
+                            <i class="fa fa-paperclip fa-lg" aria-hidden="true"></i>
+                            {{ item?.file?.name }}</strong></td>
+                    <td *ngIf="uploader.options.isHTML5" nowrap style="border: transparent;">
+                        {{ item?.file?.size/1024/1024 | number:'.2' }} MB</td>
+ 
+                    <td nowrap style="border: transparent;">
+ 
+                        <button type="button" class="btn btn-danger btn-xs" (click)="item.remove()">
+                            <span class="glyphicon glyphicon-trash"></span> x
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <p-toast></p-toast>
+ 
+</div>

@@ -1,0 +1,7 @@
+<button class="logoutPos" (click)="logout()" *ngIf="!down">Logout</button>
+<span class="userBox">
+    <label class="userName">Clark Kent</label>
+    <i class="pi pi-chevron-down" *ngIf="down" (click)="showLogout()" style="font-size: 0.7em"></i>
+    <i class="pi pi-chevron-up" *ngIf="!down" (click)="showLogout()" style="font-size: 0.7em"></i>
+</span>
+<img src="assets/images/765-default-avatar.png" alt="Avatar" class="avatar">

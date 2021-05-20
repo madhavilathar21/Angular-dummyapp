@@ -1,0 +1,63 @@
+.boxStyle{
+    background: linear-gradient(90deg, rgba(57,77,143,1) 27%, rgba(0,42,117,1) 100%);
+    color: white;
+    box-shadow: 1px 2px 3px #747474;
+    padding-left: 30px;
+    font-family: "GE Inspira","GE Inspira Sans";
+    /* height: 130px; */
+}
+
+.numDigit {
+    font-size: 23px;
+    font-family: "GE Inspira","GE Inspira Sans";
+    float: right;
+    padding-right: 18px;
+}
+
+.cardHeading{
+    font-size: 18px;
+    margin-bottom: 13px;
+    margin-top: 5px;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.componentHeading {
+    color: #00306C;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.innerBoxStyle{
+    background: linear-gradient(90deg, rgba(57,77,143,1) 27%, rgba(0,42,117,1) 100%);
+    color: white;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.row {
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.section{
+    margin-bottom: 10px;
+    border-right: 5px solid #516A9F;
+}
+
+.dateVal {
+    color: #BEC6DB;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.chartBox {
+    box-shadow: 1px 2px 3px #747474;
+}
+
+.homeDesign{
+    font-size: 0.9em;
+    color: blue;
+    cursor: pointer;
+    /* font-family: "GE Inspira","GE Inspira Sans"; */
+}
