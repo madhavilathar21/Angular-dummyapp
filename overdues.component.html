@@ -1,0 +1,29 @@
+<div class="col-md-12 col-sm-12 col-xl-12">
+    <label style="font-size: 25px;">Payment Rejection</label>
+    <img src="assets/images/noun_Upload_1638162.png" width="15" height="15" style="float: right;position: relative;right: 11vw;top: 2vh;cursor: pointer;"
+        (click)="showDialog()">
+    <span class="monthDropdown">
+        <!-- <p-dropdown [options]="months" optionLabel="name"></p-dropdown> -->
+        <select class="selectpicker">
+            <option *ngFor="let mon of months">{{mon.code}}</option>
+        </select>
+    </span>
+    <div class="card">
+        <highcharts-chart *ngIf="chartOptions" [Highcharts]="highcharts" [options]="chartOptions" style="width: 100%; height: 300px; display: block;">
+        </highcharts-chart>
+    </div>
+</div>
+
+<!-- tabular formate start -->
+
+<p-dialog position="top-left" modal="true" blockScroll="true" draggable="false" [(visible)]="display" [style]="{width: '80vw'}">
+    <p-header>
+        <span style="font-size: 18px; color: rgb(61, 124, 201);">Payment Rejection Data</span>
+    </p-header>
+    <app-supplier-table></app-supplier-table>
+    <p-footer>
+        <button class="btn btn-primary">Download</button>
+    </p-footer>
+</p-dialog>
+
+<!-- tabular formate end -->

@@ -1,0 +1,33 @@
+<div class="col-md-12 col-sm-12 col-xl-12">
+    <label style="font-size: 25px;">Overdue Clearance</label>
+    <img src="assets/images/noun_Upload_1638162.png" width="15" height="15" style="float: right;position: relative;right: 11vw;top: 2vh;cursor: pointer;"
+        (click)="showDialog()">
+    <span class="monthDropdown">
+        <!-- <p-dropdown [options]="months" optionLabel="name"></p-dropdown> -->
+        <select class="selectpicker">
+            <option *ngFor="let mon of months">{{mon.code}}</option>
+        </select>
+    </span>
+    <div class="row" style="border-top: 2px solid #b8b9b9">
+        <div class="col-md-3 col-sm-3 col-xl-3" style="height: 300px;">
+            <app-overdue-clearence-donut></app-overdue-clearence-donut>
+        </div>
+        <div *ngIf="chartOptions" class="col-md-9 col-sm-9 col-xl-9" style="border-left: 2px solid #b8b9b9">
+            <highcharts-chart [Highcharts]="highcharts" [options]="chartOptions" style="width: 100%; height: 300px; display: block;">
+            </highcharts-chart>
+        </div>
+    </div>
+</div>
+<!-- tabular formate start -->
+
+<p-dialog position="top-left" modal="true" blockScroll="true" draggable="false" [(visible)]="display" [style]="{width: '80vw'}">
+    <p-header>
+        <span style="font-size: 18px; color: rgb(61, 124, 201);">Overdue Clearance Data</span>
+    </p-header>
+    <app-supplier-table></app-supplier-table>
+    <p-footer>
+        <button class="btn btn-primary">Download</button>
+    </p-footer>
+</p-dialog>
+
+<!-- tabular formate end -->
