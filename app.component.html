@@ -1,0 +1,82 @@
+<!-- <div class="container-fluid"> -->
+<app-header *ngIf="showHead"></app-header>
+<!-- <router-outlet></router-outlet> -->
+<!-- </div> -->
+
+<!-- <mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" [(opened)]="opened">
+
+    <ul>
+      <li>
+        <i class="pi pi-homes"></i>
+        <a href="/regionWise" mdbWavesEffect>Home</a>
+      </li>
+      <li>
+        <a href="#" mdbWavesEffect>Admin</a>
+      </li>
+    </ul>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <p-button type="button" icon="pi pi-bars" (click)="opened = !opened"></p-button>
+    <app-header>
+
+    </app-header>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<div class="row" id="body-row" style="min-height: 87vh;">
+  <!-- <app-header></app-header> -->
+  <div id="sidebar-container" class="sidebar-expanded d-none d-md-block" [ngClass]="{'sidebar-expanded':collapse,'sidebar-collapsed': !collapse}"
+    *ngIf="showHead">
+    <ul class="list-group">
+      <!-- <a href="/regionWise" class="bg-gradiant list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-dashboard fa-fw mr-3"></span>
+          <span class="menu-collapsed" *ngIf="collapse">Dashboard</span>
+        </div>
+      </a> -->
+      <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-gradiant list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-dashboard fa-fw mr-3"></span>
+          <span class="menu-collapsed" *ngIf="collapse">Dashboard</span>
+          <span class="submenu-icon ml-auto" *ngIf="collapse"></span>
+        </div>
+      </a>
+      <!-- Submenu content -->
+      <div id='submenu1' class="collapse sidebar-submenu">
+        <a href="/regionWise" class="list-group-item list-group-item-action bg-gradiant text-white">
+          <span class="menu-collapsed">R2R</span>
+        </a>
+        <a href="/mainPage" class="list-group-item list-group-item-action bg-gradiant text-white">
+          <span class="menu-collapsed">P2P</span>
+        </a>
+        <a href="/compare" class="list-group-item list-group-item-action bg-gradiant text-white">
+          <span class="menu-collapsed">Comparision</span>
+        </a>
+      </div>
+      <a href="/adminPage" class="bg-gradiant list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span class="fa fa-user fa-fw mr-3"></span>
+          <span class="menu-collapsed" *ngIf="collapse">Admin</span>
+        </div>
+      </a>
+      <a data-toggle="sidebar-colapse" *ngIf="collapse" (click)="collapseToggle()" class="bg-gradiant list-group-item list-group-item-action d-flex align-items-center">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span id="collapse-icon" class="fa fa-angle-double-left fa-2x mr-3"></span>
+          <span id="collapse-text" class="menu-collapsed">Collapse</span>
+        </div>
+      </a>
+      <a data-toggle="sidebar-colapse" *ngIf="!collapse" (click)="collapseToggle()" class="bg-gradiant list-group-item list-group-item-action d-flex align-items-center">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+          <span id="collapse-icon" class="fa fa-angle-double-right fa-2x mr-3"></span>
+        </div>
+      </a>
+    </ul>
+  </div>
+  <!-- <div [ngClass]="{'col-sm-11 col-md-11 col-xs-11': !collapse,'col-sm-10 col-md-10 col-xs-10': collapse}" style=""> -->
+  <div [ngClass]="{'bigArea': !collapse,'smallArea': collapse}" style="background-color: #F4F6F7;">
+    <router-outlet></router-outlet>
+  </div>
+</div>
