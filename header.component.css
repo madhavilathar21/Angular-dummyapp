@@ -1,0 +1,19 @@
+.titleBar {
+    padding: 9px 10px 10px;
+    /* font-size: 30px; */
+    border-bottom: 1px solid #bbb; 
+    font-family: "GE Inspira","GE Inspira Sans";
+    /* font-weight: 700; */
+    /* color: #3D7CC9; */
+}
+
+.titleVal {
+    padding-left: 10px;
+    font-family: "GE Inspira","GE Inspira Sans";
+}
+
+.loginBox{
+    float: right;
+    margin-right: 3vw;
+    font-family: "GE Inspira","GE Inspira Sans";
+}

@@ -1,0 +1,11 @@
+.dateFilter{
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "GE Inspira","GE Inspira Sans";
+    color: rgb(61, 124, 201);
+}
+
+.fontStyle{
+    font-family: "GE Inspira","GE Inspira Sans";
+}

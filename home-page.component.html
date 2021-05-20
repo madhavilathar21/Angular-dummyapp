@@ -1,0 +1,404 @@
+<div class="col-sm-12 col-md-12 col-xl-12">
+    <span class="pi pi-home homeDesign" (click)="backToHome()"></span>
+    <span> &nbsp;>&nbsp; </span>
+    <span>{{regionValue | uppercase}}</span>
+</div>
+<div class="col-sm-12 col-md-12 col-xl-12">
+    <label class="componentHeading">Invoice Management</label>
+
+    <span style="float: right;cursor: pointer;" (click)="showFilterBox()">
+        <span style="font-size: 15px; font-weight: 700;">Download Reports </span>
+        <img src="assets/images/noun_Upload_1638162.png" width="15" height="15">
+    </span>
+    <span style="float: right;cursor: pointer;margin-right: 12px;" (click)="showQueryPop()">
+        <span style="font-size: 15px; font-weight: 700;">Query</span>
+        <i class="pi pi-file-excel"></i>
+    </span>
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xl-4">
+            <div class="card boxStyle">
+                <div class="cardHeading">
+                    <img src="assets/images/Rectangle_6740.png" width="08" height="25">&nbsp;&nbsp;Avg Time To Pay Invoices </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer" data-toggle="modal" data-target="#openModalJan">
+
+
+                        <!-- JANUARY COde start -->
+                        <div id="openModalJan" class="modal" data-target="#modal" tabindex="-1" role="dialog" aria-labelledby="openModalLabel" style="display: none;"
+                            aria-hidden="true">
+                            <div style="position: relative;  display: flex; justify-content: center; top: 40%;">
+                                <div class="card boxStyle" style="padding-left:10px;">
+                                    <div class="row">
+                                        <div class="col-md-9 cardHeading">January (Week wise %)</div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-default" data-dismiss="#openModalJan">
+                                                <span style="color:white; padding-left:30px;">Close</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 col-sm-1 col-xl-1" style="cursor: pointer">
+                                            <!-- <div class="section">
+                                                <label>Week 01</label>
+                                                <br>
+                                                <span class="numDigit">38</span>
+                                                <span class="dateVal">%</span>
+                                            </div> -->
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 01</label>
+                                                <br>
+                                                <span class="numDigit">38</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 02</label>
+                                                <br>
+                                                <span class="numDigit">42</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 03</label>
+                                                <br>
+                                                <span class="numDigit">09</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 04</label>
+                                                <br>
+                                                <span class="numDigit">27</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="">
+                                                <label>Week 05</label>
+                                                <br>
+                                                <span class="numDigit">63</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 col-sm-1 col-xl-1" style="cursor: pointer">
+                                            <!-- <div class="">
+                                                <label>Week 05</label>
+                                                <br>
+                                                <span class="numDigit">63</span>
+                                                <span class="dateVal">%</span>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- JANUARY Code End -->
+
+                        <div class="section">
+                            <label>Jan</label>
+                            <br>
+                            <span class="numDigit">15</span>&nbsp;
+                            <span class="dateVal">Days</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer" data-toggle="modal" data-target="#openModalFeb">
+
+                        <!-- Feb COde start -->
+                        <div id="openModalFeb" class="modal" data-target="#modal" tabindex="-1" role="dialog" aria-labelledby="openModalLabel" style="display: none;"
+                            aria-hidden="true">
+                            <div style="position: relative;  display: flex; justify-content: center; top: 40%;">
+                                <div class="card boxStyle" style="padding-left:15px;">
+                                    <div class="row">
+                                        <div class="col-md-9 cardHeading">February (Week wise %)</div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-default" data-dismiss="#openModalFeb">
+                                                <span style="color:white">Close</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xl-3" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 01</label>
+                                                <br>
+                                                <span class="numDigit">38</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xl-3" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 02</label>
+                                                <br>
+                                                <span class="numDigit">42</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xl-3" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 03</label>
+                                                <br>
+                                                <span class="numDigit">09</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xl-3" style="cursor: pointer">
+                                            <div class="">
+                                                <label>Week 04</label>
+                                                <br>
+                                                <span class="numDigit">63</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xl-3" style="cursor: pointer">
+                                            <!-- <div class="">
+                                                <label>Week 04</label>
+                                                <br>
+                                                <span class="numDigit">63</span>
+                                                <span class="dateVal">%</span>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Feb Code End -->
+
+                        <div class="section">
+                            <label>Feb</label>
+                            <br>
+                            <span class="numDigit">18</span>&nbsp;
+                            <span class="dateVal">Days</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer" data-toggle="modal" data-target="#openModalMar">
+                        <!-- Mar COde start -->
+                        <div id="openModalMar" class="modal" data-target="#modal" tabindex="-1" role="dialog" aria-labelledby="openModalLabel" style="display: none;"
+                            aria-hidden="true">
+                            <div style="position: relative;  display: flex; justify-content: center; top: 40%;">
+                                <div class="card boxStyle" style="padding-left:10px;">
+                                    <div class="row">
+                                        <div class="col-md-9 cardHeading">March (Week wise %)</div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-default" data-dismiss="#openModalMar">
+                                                <span style="color:white; padding-left:30px;">Close</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1 col-sm-1 col-xl-1" style="cursor: pointer">
+                                            <!-- <div class="section">
+                                                <label>Week 01</label>
+                                                <br>
+                                                <span class="numDigit">38</span>
+                                                <span class="dateVal">%</span>
+                                            </div> -->
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 01</label>
+                                                <br>
+                                                <span class="numDigit">38</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 02</label>
+                                                <br>
+                                                <span class="numDigit">42</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 03</label>
+                                                <br>
+                                                <span class="numDigit">09</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="section">
+                                                <label>Week 04</label>
+                                                <br>
+                                                <span class="numDigit">27</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xl-2" style="cursor: pointer">
+                                            <div class="">
+                                                <label>Week 05</label>
+                                                <br>
+                                                <span class="numDigit">63</span>
+                                                <span class="dateVal">%</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 col-sm-1 col-xl-1" style="cursor: pointer">
+                                            <!-- <div class="">
+                                                <label>Week 05</label>
+                                                <br>
+                                                <span class="numDigit">63</span>
+                                                <span class="dateVal">%</span>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mar Code End -->
+
+                        <div class="">
+                            <label>March</label>
+                            <br>
+                            <span class="numDigit">13</span>&nbsp;
+                            <span class="dateVal">Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xl-4">
+            <div class="card boxStyle">
+                <div class="cardHeading">
+                    <img src="assets/images/Rectangle_6559.png" width="08" height="25">&nbsp;&nbsp;Outstanding Invoices (not cleared %)</div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer">
+                        <div class="section">
+                            <label>Jan</label>
+                            <br>
+                            <span class="numDigit">38</span>
+                            <span class="dateVal">%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer">
+                        <div class="section">
+                            <label>Feb</label>
+                            <br>
+                            <span class="numDigit">42</span>
+                            <span class="dateVal">%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer">
+                        <div class="">
+                            <label>March</label>
+                            <br>
+                            <span class="numDigit">09</span>
+                            <span class="dateVal">%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xl-4">
+            <div class="card boxStyle">
+                <div class="cardHeading">
+                    <img src="assets/images/Rectangle_6740.png" width="08" height="25">&nbsp;&nbsp;Payment Terms </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer" (click)="showDialog('30 Days')">
+                        <div class="section">
+                            <label>30 Days</label>
+                            <br>
+                            <span class="numDigit">$3.3</span>
+                            <span class="dateVal">M</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer" (click)="showDialog('30-90 Days')">
+                        <div class="section">
+                            <label>30-90 Days</label>
+                            <br>
+                            <span class="numDigit">$2.7</span>
+                            <span class="dateVal">M</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xl-4" style="cursor: pointer" (click)="showDialog('90-150 Days')">
+                        <div class="">
+                            <label>90-150 Days</label>
+                            <br>
+                            <span class="numDigit">$44</span>
+                            <span class="dateVal">M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- chart section start -->
+
+<div class="col-md-12 col-sm-12 col-xl-12" style="margin-top: 20px">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xl-6">
+            <div class="card chartBox">
+                <app-payments></app-payments>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xl-6">
+            <div class="card chartBox">
+                <app-overdue-clearence></app-overdue-clearence>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xl-6" style="margin-top: 15px;">
+            <div class="card chartBox">
+                <app-overdues></app-overdues>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xl-6" style="margin-top: 15px;">
+            <div class="card chartBox">
+                <app-invoice-submission></app-invoice-submission>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xl-12" style="margin-top: 15px;">
+            <div class="card chartBox">
+                <app-creditors></app-creditors>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- tabular formate start -->
+<p-dialog position="top-left" modal="true" blockScroll="true" draggable="false" [(visible)]="display" [style]="{width: '80vw'}">
+    <p-header>
+        Payment Term -
+        <span style="font-size: 18px; color: rgb(61, 124, 201);">{{period}}</span>
+    </p-header>
+    <app-supplier-table></app-supplier-table>
+    <p-footer>
+    </p-footer>
+</p-dialog>
+<!-- tabular formate end -->
+
+<!--Query tabular formate start -->
+<p-dialog position="top-left" modal="true" blockScroll="true" draggable="false" [(visible)]="displayQuery" [style]="{width: '80vw'}">
+    <p-header>
+        Query Data
+    </p-header>
+    <app-query-table></app-query-table>
+    <p-footer>
+    </p-footer>
+</p-dialog>
+<!--Query tabular formate end -->
+
+<!-- download filter Data start -->
+<p-dialog position="top-left" modal="true" blockScroll="true" draggable="false" [(visible)]="downloadDisplay" [style]="{width: '80vw'}">
+    <p-header>
+        <span style="font-size: 18px; color: rgb(61, 124, 201);">Download Reports</span>
+    </p-header>
+    <app-filter></app-filter>
+    <p-footer>
+        <button class="btn btn-primary">Download</button>
+        <button class="btn ">Cancel</button>
+    </p-footer>
+</p-dialog>
+<!-- download filter Data start -->

@@ -1,0 +1,39 @@
+<div class="col-sm-12 col-md-12 col-xs-12 fontStyle" style="height: 28vh;">
+    <div>
+        <span style="font-size: 16px;font-weight: 600; float: left;">Select KPIs to download the reports</span>
+        <span style="font-size: 16px;font-weight: 600;float: right;">Select Period to download the reports</span>
+    </div>
+    <div class="col-sm-10 col-md-10 col-xs-10" style="float: left; height: 24vh;">
+
+        <p-checkbox name="groupname" value="Payments" label="Payments " [(ngModel)]="selectedValues"></p-checkbox>&nbsp;
+        <p-checkbox name="groupname" value="Overdues Clearence" label="Overdues Clearence " [(ngModel)]="selectedValues"></p-checkbox>&nbsp;
+        <p-checkbox name="groupname" value="Payments Rejection" label="Payments Rejection " [(ngModel)]="selectedValues"></p-checkbox>&nbsp;
+        <p-checkbox name="groupname" value="Overdues" label="Overdues " [(ngModel)]="selectedValues"></p-checkbox>&nbsp;
+        <p-checkbox name="groupname" value="Creditors" label="Creditors " [(ngModel)]="selectedValues"></p-checkbox>
+    </div>
+    <div class="col-sm-2 col-md-2 col-xs-2" style="float: right;">
+        <!-- <div style="font-size: 16px;font-weight: 600;">Select Period to download the reports</div> -->
+        <div style="margin-bottom: 1vh;">
+            <div class="dateFilter" (click)="dateEventFilter('cWeek')">Current Week</div>
+            <div class="dateFilter" (click)="dateEventFilter('lWeek')">Last Week</div>
+            <div class="dateFilter" (click)="dateEventFilter('cMonth')">Current Month</div>
+            <div class="dateFilter" (click)="dateEventFilter('lMonth')">Last Month</div>
+            <div class="dateFilter" (click)="dateEventFilter('cQuater')">Current Quater</div>
+            <div class="dateFilter" (click)="dateEventFilter('lQuater')">Last Quater</div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12 col-md-12 col-xs-12 fontStyle">
+    <div style="height: 12vh; float: right;">
+        <span style="float: left; margin-right: 2vw;">
+            <label>From:</label>
+            <br>
+            <input type="date" [(ngModel)]="fromDate" [max]="currentDate" [min]="minVal" style="width: 11vw;height: 5vh;">
+        </span>
+        <span style="float: right;">
+            <label>To:</label>
+            <br>
+            <input type="date" [(ngModel)]="toDate" [disabled]="!fromDate" [max]="currentDate" [min]="fromDate" style="width: 11vw;height: 5vh;">
+        </span>
+    </div>
+</div>
